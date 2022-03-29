@@ -21,7 +21,7 @@ than adding it to the end of an array without affecting the rest of the array.
   - InsertAfter
 
 ## Whiteboard Process
-- [Append - Whiteboard](assest/append.png)
+- [Append - Whiteboard](assest/Append.png)
 - [InsertBefore - Whiteboard](assest/InsertBefore.png)
 - [InsertAfter - Whiteboard](assest/InsertAfter.png)
 
