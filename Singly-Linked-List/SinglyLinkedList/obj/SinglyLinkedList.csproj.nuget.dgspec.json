@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ola M AL-Shlool\\Desktop\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj": {}
+    "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ola M AL-Shlool\\Desktop\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj": {
+    "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ola M AL-Shlool\\Desktop\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj",
+        "projectUniqueName": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj",
         "projectName": "SinglyLinkedList",
-        "projectPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj",
+        "projectPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\SinglyLinkedList.csproj",
         "packagesPath": "C:\\Users\\Ola M AL-Shlool\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\obj\\",
+        "outputPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\data-structures-and-algorithms\\Singly-Linked-List\\SinglyLinkedList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ola M AL-Shlool\\AppData\\Roaming\\NuGet\\NuGet.Config",

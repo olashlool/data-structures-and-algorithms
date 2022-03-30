@@ -7,17 +7,18 @@ namespace SinglyLinkedLists
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            list.Insert(22);
-            list.Insert(2);
-            list.Insert(15);
-            list.Append(20);
-            list.Append(5);
-            list.Append(21);
+            list.Insert(21);
+            list.Insert(5);
+            list.Insert(20);
+          //  list.Append(15);
+            list.Append(2);
+          //  list.Append(22);
             Console.WriteLine(list.ToString());
-            list.InsertBefore(2, 20);
-            list.InsertAfter(22, 21);
-            list.Append(5);
+            list.InsertBefore(2, 15);
+            list.InsertAfter(2, 22);
             Console.WriteLine(list.ToString());
+            Console.Write("The Kth of Node 2 : ");
+            Console.WriteLine(list.KthFromEnd(2));
             Console.WriteLine("The Node is Found ? " + list.Includes(22));
         }
     }

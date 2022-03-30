@@ -114,7 +114,7 @@ namespace SinglyLinkedLists
         public string ToString()
         {
             Node Start = Head;
-            string result = "";
+            string result = "Head -> ";
             while (Start != null)
             {
                 result += $"[{Start.Data}] -> ";
@@ -122,6 +122,34 @@ namespace SinglyLinkedLists
             }
             return result + "NULL";
         }
-
+         public object KthFromEnd(int k)
+         {
+             try
+             {
+                 if (k < 0) throw new Exception();
+                 int counter = 0;
+                 Current = Head;
+                 // Find length of linked list
+                 while (Current.Next != null)
+                 {
+                     counter++;
+                     Current = Current.Next;
+                 }
+                 if (k > counter) throw new Exception();
+                 //  Console.WriteLine($"Conter :{counter}");
+                 Current = Head;
+                 while (counter > k)
+                 {
+                     Current = Current.Next;
+                     counter--;
+                 }
+                 return Current.Data;
+             }
+             catch (Exception)
+             {
+                 if (k< 0) return "Ooops, Invalid K";
+                 else return "Ooops, K Out of Range.";
+             }
+         }        
     }
-}
+    }
