@@ -10,6 +10,9 @@ Linked Lists seem to be useful when you're needing to have a conglomerate of inf
 Compared to arrays, you can add a node at the front of the LinkedList so the Big O for Time is much much faster
 than adding it to the end of an array without affecting the rest of the array.
 
+Write a method for the Linked List class which takes a number k, Return the node’s value that is 
+k from the end of the linked list. 
+
 # Challenge Summary
 - Create a linked list and node class 
 - Create methods to 
@@ -19,11 +22,13 @@ than adding it to the end of an array without affecting the rest of the array.
   - Append
   - InsertBefor
   - InsertAfter
+  - KthFromEnd
 
 ## Whiteboard Process
 - [Append - Whiteboard](assest/Append.png)
 - [InsertBefore - Whiteboard](assest/InsertBefore.png)
 - [InsertAfter - Whiteboard](assest/InsertAfter.png)
+- [KthFromEnd - Whiteboard](assest/KthFromEnd.png)
 
 
 
@@ -47,7 +52,9 @@ than adding it to the end of an array without affecting the rest of the array.
 - Big O Time = O(n) 
 - Big O Space = O(1)
 
-
+##### KthFromEnd
+- Big O Time = O(n) 
+- Big O Space = O(1)
 
 
 ## API
@@ -72,6 +79,10 @@ than adding it to the end of an array without affecting the rest of the array.
 
 - InsertAfter Method :
 > which add a new node with the given newValue immediately after the value node
+
+- KthFromEnd Method
+>  method for the Linked List class which takes a number k, Return the node’s value that is 
+k from the end of the linked list. 
 
 
 
