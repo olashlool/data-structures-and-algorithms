@@ -144,67 +144,6 @@ namespace SinglyLinkedListTest
             Assert.Equal("Head -> [1] -> NULL", list.ToString());
             Assert.Equal("Ooops, K Out of Range.", list.KthFromEnd(1));
         }
-        [Fact]
-        public void TestZipLinkedList()
-        {
-            LinkedList list1 = new LinkedList();
-            list1.Append(1);
-            list1.Append(3);
-            list1.Append(5);
-            LinkedList list2 = new LinkedList();
-            list2.Append(2);
-            list2.Append(4);
-            list2.Append(6);
-            LinkedList list3 = list1.ZipLists(list1, list2);
-            Assert.Equal("Head -> [1] -> [2] -> [3] -> [4] -> [5] -> [6] -> NULL", list3.ToString());
-        }
-        [Fact]
-        public void TestZipLinkedList_ListOneLessThanListTwo()
-        {
-            LinkedList list1 = new LinkedList();
-            list1.Append(1);
-            list1.Append(3);
-            LinkedList list2 = new LinkedList();
-            list2.Append(2);
-            list2.Append(4);
-            list2.Append(6);
-            LinkedList list3 = list1.ZipLists(list1, list2);
-            Assert.Equal("Head -> [1] -> [2] -> [3] -> [4] -> [6] -> NULL", list3.ToString());
-        }
-        [Fact]
-        public void TestZipLinkedList_ListOneLongerThanListTwo()
-        {
-            LinkedList list1 = new LinkedList();
-            list1.Append(1);
-            list1.Append(3);
-            list1.Append(5);
-            list1.Append(7);
-            LinkedList list2 = new LinkedList();
-            list2.Append(2);
-            list2.Append(4);
-            LinkedList list3 = list1.ZipLists(list1, list2);
-            Assert.Equal("Head -> [1] -> [2] -> [3] -> [4] -> [5] -> [7] -> NULL", list3.ToString());
-        }
-        [Fact]
-        public void TestZipLinkedList_ListOneNULL()
-        {
-            LinkedList list1 = new LinkedList();
-            LinkedList list2 = new LinkedList();
-            list2.Append(2);
-            list2.Append(4);
-            LinkedList list3 = list1.ZipLists(list1, list2);
-            Assert.Equal("Head -> [2] -> [4] -> NULL", list3.ToString());
-        }
-        [Fact]
-        public void TestZipLinkedList_ListtWONULL()
-        {
-            LinkedList list1 = new LinkedList();
-            list1.Append(1);
-            list1.Append(3);
-            LinkedList list2 = new LinkedList();
-
-            LinkedList list3 = list1.ZipLists(list1, list2);
-            Assert.Equal("Head -> [1] -> [3] -> NULL", list3.ToString());
-        }
+       
     }
 }

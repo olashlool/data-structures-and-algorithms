@@ -151,19 +151,6 @@ namespace SinglyLinkedLists
                 else return "Ooops, K Out of Range.";
             }
         }
-         public LinkedList ZipLists(LinkedList list1, LinkedList list2)
-         {
-             list1.Current = list1.Head;
-             list2.Current = list2.Head;
-            if (list1.Current == null) return list2;
-             while (list2.Current != null )
-             {
-                 Node tempNode = list1.Current.Next;
-                 list1.Current.Next = list2.Current;
-                 list2.Current = tempNode;
-                 list1.Current = list1.Current.Next;
-             }
-             return list1;
-         }
+         
     } 
 }

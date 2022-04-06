@@ -7,6 +7,9 @@
 | Array Binary Search |[Array-Binary-Search](Array-Binary-Search/README.md)|
 | Fibonacci Sequence |[Fibonacci-Sequence](Fibonacci-Sequence/README.md)|
 | Singly Linked List |[Singly-Linked-List](Singly-Linked-List/README.md)|
+| linked list zip |[linked-list-zip](linked-list-zip/linked-list-zip.md)|
+
+
 
 
 

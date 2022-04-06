@@ -13,8 +13,6 @@ than adding it to the end of an array without affecting the rest of the array.
 Write a method for the Linked List class which takes a number k, Return the node’s value that is 
 k from the end of the linked list. 
 
-Create a ZipList method that will take in 2 lists and merge them via alternating nodes from each list
-
 # Challenge Summary
 - Create a linked list and node class 
 - Create methods to 
@@ -25,14 +23,12 @@ Create a ZipList method that will take in 2 lists and merge them via alternating
   - InsertBefor
   - InsertAfter
   - KthFromEnd
-  - zipLists
 
 ## Whiteboard Process
 - [Append - Whiteboard](assest/Append.png)
 - [InsertBefore - Whiteboard](assest/InsertBefore.png)
 - [InsertAfter - Whiteboard](assest/InsertAfter.png)
 - [KthFromEnd - Whiteboard](assest/KthFromEnd.png)
-- [zipLists - Whiteboard](assest/zipLists.png)
 
 
 ## Approach & Efficiency
@@ -59,9 +55,6 @@ Create a ZipList method that will take in 2 lists and merge them via alternating
 - Big O Time = O(n) 
 - Big O Space = O(1)
 
-##### zipLists
-- Big O Time = O(n) 
-- Big O Space = O(1)
 ## API
 - Insert method :
 
@@ -89,9 +82,6 @@ Create a ZipList method that will take in 2 lists and merge them via alternating
 >  method for the Linked List class which takes a number k, Return the node’s value that is 
 k from the end of the linked list. 
 
-- zipLists
-> method for the Linked List class which accepts two linked lists. 
-Return a single linked list where the values have been merged, like a zipper.​
 
 
 
