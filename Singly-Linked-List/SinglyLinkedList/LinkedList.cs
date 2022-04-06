@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SinglyLinkedLists
 {
     public class LinkedList
-    { 
+    {
         public Node Head { get; set; }
         public Node Tail { get; set; }
         public Node Current { get; set; }
@@ -18,7 +18,7 @@ namespace SinglyLinkedLists
             {
                 Head = newNode;
                 Tail = newNode;
-            }else
+            } else
             {
                 newNode.Next = Head;
                 Head = newNode;
@@ -27,7 +27,7 @@ namespace SinglyLinkedLists
         public void Append(int value)
         {
             Node newNode = new Node(value);
-            if (Head== null)
+            if (Head == null)
             {
                 Insert(value);
             }
@@ -36,7 +36,7 @@ namespace SinglyLinkedLists
                 Tail.Next = newNode;
                 Tail = newNode;
             }
-            
+
         }
         public void InsertBefore(int value, int newValue)
         {
@@ -96,7 +96,7 @@ namespace SinglyLinkedLists
                 Console.WriteLine("List is empty...");
             }
         }
-       
+
         public bool Includes(int value)
         {
             Current = Head;
@@ -122,34 +122,48 @@ namespace SinglyLinkedLists
             }
             return result + "NULL";
         }
-         public object KthFromEnd(int k)
+        public object KthFromEnd(int k)
+        {
+            try
+            {
+                if (k < 0) throw new Exception();
+                int counter = 0;
+                Current = Head;
+                // Find length of linked list
+                while (Current.Next != null)
+                {
+                    counter++;
+                    Current = Current.Next;
+                }
+                if (k > counter) throw new Exception();
+                //  Console.WriteLine($"Conter :{counter}");
+                Current = Head;
+                while (counter > k)
+                {
+                    Current = Current.Next;
+                    counter--;
+                }
+                return Current.Data;
+            }
+            catch (Exception)
+            {
+                if (k < 0) return "Ooops, Invalid K";
+                else return "Ooops, K Out of Range.";
+            }
+        }
+         public LinkedList ZipLists(LinkedList list1, LinkedList list2)
          {
-             try
+             list1.Current = list1.Head;
+             list2.Current = list2.Head;
+            if (list1.Current == null) return list2;
+             while (list2.Current != null )
              {
-                 if (k < 0) throw new Exception();
-                 int counter = 0;
-                 Current = Head;
-                 // Find length of linked list
-                 while (Current.Next != null)
-                 {
-                     counter++;
-                     Current = Current.Next;
-                 }
-                 if (k > counter) throw new Exception();
-                 //  Console.WriteLine($"Conter :{counter}");
-                 Current = Head;
-                 while (counter > k)
-                 {
-                     Current = Current.Next;
-                     counter--;
-                 }
-                 return Current.Data;
+                 Node tempNode = list1.Current.Next;
+                 list1.Current.Next = list2.Current;
+                 list2.Current = tempNode;
+                 list1.Current = list1.Current.Next;
              }
-             catch (Exception)
-             {
-                 if (k< 0) return "Ooops, Invalid K";
-                 else return "Ooops, K Out of Range.";
-             }
-         }        
-    }
-    }
+             return list1;
+         }
+    } 
+}
