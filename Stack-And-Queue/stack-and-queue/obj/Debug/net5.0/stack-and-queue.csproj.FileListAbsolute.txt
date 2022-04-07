@@ -1,0 +1,16 @@
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\stack-and-queue.exe
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\stack-and-queue.deps.json
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\stack-and-queue.runtimeconfig.json
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\stack-and-queue.runtimeconfig.dev.json
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\stack-and-queue.dll
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\ref\stack-and-queue.dll
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\bin\Debug\net5.0\stack-and-queue.pdb
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.csproj.AssemblyReference.cache
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.AssemblyInfoInputs.cache
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.AssemblyInfo.cs
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.csproj.CoreCompileInputs.cache
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.dll
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\ref\stack-and-queue.dll
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.pdb
+C:\Users\Ola M AL-Shlool\Desktop\LTUC\data-structures-and-algorithms\Stack-And-Queue\stack-and-queue\obj\Debug\net5.0\stack-and-queue.genruntimeconfig.cache
