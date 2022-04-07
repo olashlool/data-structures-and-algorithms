@@ -9,6 +9,7 @@
 | Singly Linked List |[Singly-Linked-List](Singly-Linked-List/README.md)|
 | linked list zip |[linked-list-zip](linked-list-zip/linked-list-zip.md)|
 | Reverse Linked List |[Reverse-Linked-List](Reverse-Linked-List/Reverse-Linked-List.md)|
+| Stack And Queue |[Stack-And-Queue](Stack-And-Queue/README.md)|
 
 
 
