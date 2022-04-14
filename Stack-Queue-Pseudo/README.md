@@ -11,7 +11,7 @@ Queue:
 - Dequeue: which extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 ## Whiteboard Process
-![Whiteboard](assest/Whiteboard.png)
+![Whiteboard](Assest/Whiteboard.png)
 ## Approach & Efficiency
 
 - Enqueue() - Big O Time = O(1), Space = O(1): This approach uses just a simple push() 
