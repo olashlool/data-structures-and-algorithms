@@ -10,6 +10,9 @@
 | linked list zip |[linked-list-zip](linked-list-zip/linked-list-zip.md)|
 | Reverse Linked List |[Reverse-Linked-List](Reverse-Linked-List/Reverse-Linked-List.md)|
 | Stack And Queue |[Stack-And-Queue](Stack-And-Queue/README.md)|
+| Stack Queue Pseudo |[Stack-Queue-Pseudo](Stack-Queue-Pseudo/README.md)|
+
+
 
 
 
