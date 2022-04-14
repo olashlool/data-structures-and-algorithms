@@ -20,8 +20,7 @@ and reassign the stack, using while loops and pop() to transfer nodes to each st
 then using a temp integer to store and return the dequeued node's value.
 
 
-
-
+# [Link to code](Stack-Queue-Pseudo/Classes/PseudoQueue.cs)
 
 
 
