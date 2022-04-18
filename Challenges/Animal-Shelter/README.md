@@ -17,4 +17,6 @@ AnimalShelter is a queue that follows FIFO principles with an enqueue method tha
 does not have any different logic than normal, but dequeue will take in a pref of 
 the user of dog or cat and remove the first instance of that type.
 
-Big O Time = O(n), Space = O(1):
+Big O Time : Enqueue: O(1) Dequeue: O(n)
+
+Space : O(1)
