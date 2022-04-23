@@ -11,5 +11,7 @@
 | Reverse Linked List |[Data-Structures-Reverse-Linked-List](Data-Structure/Linked-List/Reverse-Linked-List/Reverse-Linked-List.md)|
 | Stack And Queue |[Data-Structures-Stack-And-Queue](Data-Structure/Stack-Queue/README.md)|
 | Stack Queue Pseudo |[Data-Structures-Stack-Queue-Pseudo](Data-Structure/Stack-Queue/README2.md)|
-| Challenges Animal-Shelter |[Challenges-Animal-Shelter](Challenges/Animal-Shelter/README.md)|
+| Animal-Shelter |[Challenges-Animal-Shelter](Challenges/Animal-Shelter/README.md)|
 | Multi Bracket Validation |[Challenges-Multi-Bracket-Validation](Challenges/Multi-Bracket-Validation/README.md)|
+| Duck Duck Goose |[Challenges-Duck-Duck-Goose](Challenges/Duck-Duck-Goose/README.md)|
+
