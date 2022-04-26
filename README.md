@@ -14,4 +14,6 @@
 | Animal-Shelter |[Challenges-Animal-Shelter](Challenges/Animal-Shelter/README.md)|
 | Multi Bracket Validation |[Challenges-Multi-Bracket-Validation](Challenges/Multi-Bracket-Validation/README.md)|
 | Duck Duck Goose |[Challenges-Duck-Duck-Goose](Challenges/Duck-Duck-Goose/README.md)|
+| Tree |[Data-Structures-Tree](Data-Structure/Tree/README.md)|
+
 
