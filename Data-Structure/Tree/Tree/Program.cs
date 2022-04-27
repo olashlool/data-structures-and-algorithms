@@ -4,15 +4,28 @@ using System.Collections.Generic;
 
 namespace Tree
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Node node = new Node(1);
+            node.Left = new Node(2);
+            node.Left.Left = new Node(3);
+            node.Left.Right = new Node(4);
+            node.Right = new Node(5);
+            node.Right.Left = new Node(6);
+            node.Right.Right = new Node(7);
+
+            BinaryTree tree = new BinaryTree(node);
+
             BinaryTreeOUTPUT();
+            Console.WriteLine($"========= The Maximum Value Tree is ({tree.FindMaximumValue()})===========");
             Console.WriteLine();
             BinarySearchTreeOUTPUT();
 
         }
+        
+
         public static void BinaryTreeOUTPUT()
         {
             Node node = new Node(1);
@@ -24,9 +37,8 @@ namespace Tree
             node.Right.Right = new Node(7);
 
             BinaryTree tree = new BinaryTree(node);
-            BinaryTree tree2 = new BinaryTree(node);
 
-            object[] result = tree.PreOrder(node);
+            int[] result = tree.PreOrder(node);
             Console.WriteLine("==========PreOrder==========");
             Console.WriteLine();
 
@@ -40,7 +52,7 @@ namespace Tree
 
             
 
-            object[] resultIn = tree.InOrder(node);
+            int[] resultIn = tree.InOrder(node);
             Console.WriteLine("==========InOrder==========");
             Console.WriteLine();
 
@@ -52,7 +64,7 @@ namespace Tree
             Console.WriteLine();
             tree.ArrayList.Clear();
 
-            object[] result2 = tree.PostOrder(node);
+            int[] result2 = tree.PostOrder(node);
             Console.WriteLine("==========PostOrder==========");
             Console.WriteLine();
 
@@ -61,6 +73,8 @@ namespace Tree
                 Console.Write($"[{i}]");
             }
             Console.WriteLine();
+            Console.WriteLine();
+
         }
         public static void BinarySearchTreeOUTPUT()
         {
@@ -69,7 +83,7 @@ namespace Tree
             testTree.Add(55);
             testTree.Add(10);
             Console.WriteLine("====== Test Binary Search Tree (Add/Contain) =====");
-            object[] results = testTree.PreOrder(testTree.Root);
+            int[] results = testTree.PreOrder(testTree.Root);
             foreach (object i in results)
             {
                 Console.Write($"[{i}]");
