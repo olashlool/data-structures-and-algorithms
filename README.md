@@ -17,6 +17,8 @@
 | Tree |[Data-Structures-Tree](Data-Structure/Tree/README.md)|
 | Find Max Value Tree |[Data-Structures-MAX-Value-Tree](Data-Structure/Tree/README2.md)|
 | Breadth-first Traversal |[Challenges-Breadth-First-Traversal](Challenges/Breadth-First-Traversal/README.md)|
+| FizzBuzz Tree |[Challenges-FizzBuzz-Tree](Challenges/FizzBuzz-Tree/README.md)|
+
 
 
 
