@@ -18,6 +18,8 @@
 | Find Max Value Tree |[Data-Structures-MAX-Value-Tree](Data-Structure/Tree/README2.md)|
 | Breadth-first Traversal |[Challenges-Breadth-First-Traversal](Challenges/Breadth-First-Traversal/README.md)|
 | FizzBuzz Tree |[Challenges-FizzBuzz-Tree](Challenges/FizzBuzz-Tree/README.md)|
+| Compare Two File Directories |[Challenges-Compare-Two-File-Directories](Challenges/Compare-Two-File-Directories/README.md)|
+
 
 
 
