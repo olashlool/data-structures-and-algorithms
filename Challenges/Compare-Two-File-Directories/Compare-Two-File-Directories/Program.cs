@@ -15,8 +15,11 @@ namespace Compare_Two_File_Directories
             directoryOne.Root.Right = new Node("folder 03");
             directoryOne.Root.Left.Left = new Node(".js");
             directoryOne.Root.Left.Right = new Node(".py");
-            directoryOne.Root.Right.Left = new Node(".cs");
-            directoryOne.Root.Right.Right = new Node(".java");
+            directoryOne.Root.Right.Left = new Node("Folder 10");
+            directoryOne.Root.Right.Left.Left = new Node(".js");
+            directoryOne.Root.Right.Left.Right = new Node(".js");
+
+            //directoryOne.Root.Right.Right = new Node(".java");
 
             Directory directoryTwo = new Directory();
             directoryTwo.Root = new Node("folder 04");
@@ -28,7 +31,7 @@ namespace Compare_Two_File_Directories
             directoryTwo.Root.Right.Right.Left = new Node(".cs");
             directoryTwo.Root.Right.Right.Right = new Node(".js");
 
-            Console.WriteLine(compareTwoDirectory.CompareTwoDirectories(directoryOne, directoryTwo));
+            Console.WriteLine(compareTwoDirectory.mutaz(directoryOne, directoryTwo));
         }
     }
 }

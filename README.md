@@ -19,6 +19,8 @@
 | Breadth-first Traversal |[Challenges-Breadth-First-Traversal](Challenges/Breadth-First-Traversal/README.md)|
 | FizzBuzz Tree |[Challenges-FizzBuzz-Tree](Challenges/FizzBuzz-Tree/README.md)|
 | Compare Two File Directories |[Challenges-Compare-Two-File-Directories](Challenges/Compare-Two-File-Directories/README.md)|
+| Insertion Sort |[Challenges-Insertion-Sort](Challenges/Insertion-Sort/BLOG.md)|
+
 
 
 
