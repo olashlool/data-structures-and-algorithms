@@ -43,7 +43,7 @@ It does this until all pieces have been merged back into the return array leavin
 
 
 ## Trace
-![Trace](Assest/Trace.png)
+![Trace](Assest/Trace.PNG)
 
 - In the first step of the merge sort we first find the middle of the sample array and split it into 
 2 sub-arrays: left and right: **Left Array[8, 4, 23] Right Array[42, 16, 15]**
