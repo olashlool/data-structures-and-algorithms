@@ -72,5 +72,5 @@ items in the sample array.
     - BigO time for quick sort is O(n*Log n) because it divide the array into halves and sorting happens as the halves are 
     brought back together.
 - Space: O(n)
-    - BigO space for merge sort is O(n) because no matter how many arrays you end up splitting the original array into you 
+    - BigO space for quick sort is O(n) because no matter how many arrays you end up splitting the original array into you 
     will still have the same amount of index values as the original array.
