@@ -3,6 +3,8 @@
 ## Challenge Summary
 Implement a method that takes in an array of integers and returns the array with the values sorted from smallest to largest.
 
+## Whiteboard Process
+![Whiteboard](Assest/Whiteboard.PNG)
 
 ## Approach & Efficiency
 - Time: O(nlog n)
