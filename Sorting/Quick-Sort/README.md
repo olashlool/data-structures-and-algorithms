@@ -5,6 +5,7 @@ Implement a method that takes in an array of integers and returns the array with
 
 ## Whiteboard Process
 ![Whiteboard](Assest/Whiteboard.PNG)
+
 ## Approach & Efficiency
 - Time: O(nlog n)
     - BigO time for quick sort is O(n*Log n) because it divide the array into halves and sorting happens as the halves are 
