@@ -22,4 +22,6 @@
 | Insertion Sort |[Sorting-Insertion](Sorting/Insertion-Sort/BLOG.md)|
 | Merge Sort |[Sorting-Merge](Sorting/Merge-Sort/BLOG.md)|
 | Quick Sort |[Sorting-Quick](Sorting/Quick-Sort/BLOG.md)|
+| Hashtable |[Data-Structures-Hashtable](Data-Structure/Hash-Table/README.md)|
+
 
