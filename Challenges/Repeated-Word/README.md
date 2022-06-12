@@ -6,7 +6,7 @@ The challenge was to create a Method that would accept a string of any number or
 Return "no repeated" if no repeats are found.
 
 ## Whiteboard Process
-![Whiteboard](Assest/Whiteboard.PNG)
+![Whiteboard](Assest/Whiteboard.png)
 
 ## Approach & Efficiency
 a method was written that takes a string as input. The string is then broken into an array of words.
