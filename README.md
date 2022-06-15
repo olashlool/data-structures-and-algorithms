@@ -24,6 +24,8 @@
 | Quick Sort |[Sorting-Quick](Sorting/Quick-Sort/BLOG.md)|
 | Hashtable |[Data-Structures-Hashtable](Data-Structure/Hash-Table/README.md)|
 | Repeated Word |[Challenges-Repeated-Word](Challenges/Repeated-Word/README.md)|
+| Left Join |[Challenges-Left-Join](Challenges/Left-Join/README.md)|
+
 
 
 
