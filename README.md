@@ -25,6 +25,8 @@
 | Hashtable |[Data-Structures-Hashtable](Data-Structure/Hash-Table/README.md)|
 | Repeated Word |[Challenges-Repeated-Word](Challenges/Repeated-Word/README.md)|
 | Left Join |[Challenges-Left-Join](Challenges/Left-Join/README.md)|
+| Tree Intersection |[Challenges-Tree-Intersection](Challenges/Tree_Intersection/README.md)|
+
 
 
 
