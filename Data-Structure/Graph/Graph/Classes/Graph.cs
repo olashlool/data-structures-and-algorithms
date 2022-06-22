@@ -9,13 +9,13 @@ namespace Graphs
     public class Graph
     {
         public List<Vertex> Vertices { get; set; } = new List<Vertex>();
-        public Object AddNode(Object value)
+        public Object AddNode(Object value)  // Adds a node to the graph.
         {
             Vertex node = new Vertex(value);
             Vertices.Add(node);
             return node;
-        } // Adds a node to the graph.
-        public void AddEdge(Vertex vertA, Vertex vertB, int weight)
+        }
+        public void AddEdge(Vertex vertA, Vertex vertB, int weight) // Adds an edge to node which connects to another node or itself, and includes a weight value.
         {
             if (vertA == vertB)
             {
@@ -33,8 +33,8 @@ namespace Graphs
 
             Edge edgeB = new Edge(pointA, weight);
             pointB.Edge.Add(edgeB);
-        } // Adds an edge to node which connects to another node or itself, and includes a weight value.
-        public List<Vertex> GetNodes()
+        } 
+        public List<Vertex> GetNodes()// Returns a list of nodes within the graph
         {
             if (Vertices.Count == 0)
             {
@@ -44,15 +44,40 @@ namespace Graphs
             {
                 return Vertices;
             }
-        } // Returns a list of nodes within the graph
-        public List<Edge> GetNeighbors(Vertex node)
+        } 
+        public List<Edge> GetNeighbors(Vertex node) // Returns a count of all the nodes in a graph
         {
             return Vertices.Find(v => v.Value == node.Value).Edge;
-        } // Returns a list of neighbors of a given node
+        } 
         public int Size()
         {
             return Vertices.Count;
-        } // Returns a count of all the nodes in a graph
+        }
 
+        public List<Vertex> BreadthFirst(Vertex node)
+        {
+            Vertex root = Vertices.Find(n => n.Value == node.Value);
+            List<Vertex> nodePath = new List<Vertex>();
+            Queue<Vertex> nodeQueue = new Queue<Vertex>();
+
+            root.Visited = true;
+            nodeQueue.Enqueue(root);
+
+            while (nodeQueue.Count > 0)
+            {
+                Vertex front = nodeQueue.Dequeue();
+                nodePath.Add(front);
+
+                foreach (Edge edge in front.Edge)
+                {
+                    if (!edge.Neighbor.Visited)
+                    {
+                        edge.Neighbor.Visited = true;
+                        nodeQueue.Enqueue(edge.Neighbor);
+                    }
+                }
+            }
+            return nodePath;
+        }
     }
 }
