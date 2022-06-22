@@ -46,3 +46,23 @@ GetNeighbors()
 
 Size()
 * Returns a count of all the nodes in a graph.
+
+
+# Breadth-First Traversal of a Graph
+
+Breadth First Search (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next 
+vertex to start a search, when a dead end occurs in any iteration.
+
+## Challenge
+
+Extend your graph object with a breadth-first traversal method that accepts a starting node. 
+Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order 
+they were visited. Display the collection.
+
+
+## Approach & Efficiency
+- Time :O(N)
+- Space :O(N)
+## Solution
+
+![Whiteboard](Assest/WhiteboardBreadth.png)
