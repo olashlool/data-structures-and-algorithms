@@ -73,7 +73,7 @@ namespace Graphs
                     if (!edge.Neighbor.Visited)
                     {
                         edge.Neighbor.Visited = true;
-                        nodeQueue.Enqueue(edge.Neighbor);
+                        Breadth.Enqueue(edge.Neighbor);
                     }
                 }
             }
