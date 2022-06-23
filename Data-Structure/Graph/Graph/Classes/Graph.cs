@@ -57,16 +57,16 @@ namespace Graphs
         public List<Vertex> BreadthFirst(Vertex node)
         {
             Vertex root = Vertices.Find(n => n.Value == node.Value);
-            List<Vertex> nodePath = new List<Vertex>();
-            Queue<Vertex> nodeQueue = new Queue<Vertex>();
+            List<Vertex> Vertexs = new List<Vertex>();
+            Queue<Vertex> Breadth = new Queue<Vertex>();
 
             root.Visited = true;
-            nodeQueue.Enqueue(root);
+            Breadth.Enqueue(root);
 
-            while (nodeQueue.Count > 0)
+            while (Breadth.Count > 0)
             {
-                Vertex front = nodeQueue.Dequeue();
-                nodePath.Add(front);
+                Vertex front = Breadth.Dequeue();
+                Vertexs.Add(front);
 
                 foreach (Edge edge in front.Edge)
                 {
@@ -77,7 +77,7 @@ namespace Graphs
                     }
                 }
             }
-            return nodePath;
+            return Vertexs;
         }
     }
 }
