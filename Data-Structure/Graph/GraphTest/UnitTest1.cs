@@ -161,5 +161,85 @@ namespace GraphTest
             Assert.Equal("A", result[0].Edge[0].Neighbor.Value);
         }
 
+        [Fact]
+        public void PathOfManyCitiesReturnsCost()
+        {
+            Graph graph2 = new Graph();
+            graph2.AddNode("Irbid");
+            graph2.AddNode("Amman");
+            graph2.AddNode("Zarqa");
+            graph2.AddNode("Aqaba");
+            graph2.AddNode("Madaba");
+            Vertex A2 = new Vertex("Irbid");
+            Vertex B2 = new Vertex("Amman");
+            Vertex C2 = new Vertex("Zarqa");
+            Vertex D2 = new Vertex("Aqaba");
+            Vertex E2 = new Vertex("Madaba");
+            graph2.AddEdge(A2, B2, 180);
+            graph2.AddEdge(A2, C2, 100);
+            graph2.AddEdge(B2, C2, 75);
+            graph2.AddEdge(C2, D2, 350);
+            graph2.AddEdge(C2, E2, 250);
+            graph2.AddEdge(D2, E2, 150);
+
+            string[] cities = { "Irbid", "Amman", "Zarqa" };
+            var result = graph2.BusinessTrip(graph2, cities);
+            var expected = 255;
+
+            Assert.Equal(expected, result);
+        }
+        [Fact]
+        public void NoDirectPathReturnsnull()
+        {
+            Graph graph2 = new Graph();
+            graph2.AddNode("Irbid");
+            graph2.AddNode("Amman");
+            graph2.AddNode("Zarqa");
+            graph2.AddNode("Aqaba");
+            graph2.AddNode("Madaba");
+            Vertex A2 = new Vertex("Irbid");
+            Vertex B2 = new Vertex("Amman");
+            Vertex C2 = new Vertex("Zarqa");
+            Vertex D2 = new Vertex("Aqaba");
+            Vertex E2 = new Vertex("Madaba");
+            graph2.AddEdge(A2, B2, 180);
+            graph2.AddEdge(A2, C2, 100);
+            graph2.AddEdge(B2, C2, 75);
+            graph2.AddEdge(C2, D2, 350);
+            graph2.AddEdge(C2, E2, 250);
+            graph2.AddEdge(D2, E2, 150);
+
+            string[] cities = { "Irbid", "Aqaba" };
+            var result = graph2.BusinessTrip(graph2, cities);
+
+            Assert.Null(result);
+        }
+        [Fact]
+        public void SingleCityArrayReturnsNull()
+        {
+            Graph graph2 = new Graph();
+            graph2.AddNode("Irbid");
+            graph2.AddNode("Amman");
+            graph2.AddNode("Zarqa");
+            graph2.AddNode("Aqaba");
+            graph2.AddNode("Madaba");
+            Vertex A2 = new Vertex("Irbid");
+            Vertex B2 = new Vertex("Amman");
+            Vertex C2 = new Vertex("Zarqa");
+            Vertex D2 = new Vertex("Aqaba");
+            Vertex E2 = new Vertex("Madaba");
+            graph2.AddEdge(A2, B2, 180);
+            graph2.AddEdge(A2, C2, 100);
+            graph2.AddEdge(B2, C2, 75);
+            graph2.AddEdge(C2, D2, 350);
+            graph2.AddEdge(C2, E2, 250);
+            graph2.AddEdge(D2, E2, 150);
+
+            string[] cities = { "Irbid" };
+            var result = graph2.BusinessTrip(graph2, cities);
+
+            Assert.Null(result);
+        }
+
     }
 }
