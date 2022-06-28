@@ -28,7 +28,7 @@
 | Tree Intersection |[Challenges-Tree-Intersection](Challenges/Tree_Intersection/README.md)|
 | Graph |[Data-Structures-Graph](Data-Structure/Graph/README.md)|
 | Breadth First Graph |[Data-Structures-Breadth-First-Graph](Data-Structure/Graph/README.md#breadth-first-traversal-of-a-graph)|
-| Graph Business Trip |[Data-Structures-Graph-Business-Trip](Data-Structure/Graph/README.md#business-trip-find-edges)|
+| Graph Business Trip |[Challenges-Graph-Business-Trip](Data-Structure/Graph/README.md#business-trip-find-edges)|
 
 
 
