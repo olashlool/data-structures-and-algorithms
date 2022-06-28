@@ -53,7 +53,6 @@ namespace Graphs
         {
             return Vertices.Count;
         }
-
         public List<Vertex> BreadthFirst(Vertex node)
         {
             Vertex root = Vertices.Find(n => n.Value == node.Value);
@@ -78,6 +77,29 @@ namespace Graphs
                 }
             }
             return Vertexs;
+        }
+
+        public int? BusinessTrip(Graph graph, string[] cities)
+        {
+            int cost = 0;
+            if (cities.Length <= 1)
+            {
+                return null;
+            }
+            for (int i = 0; i < cities.Length - 1; i++)
+            {
+                List<Edge> nodeEdges = graph.GetNeighbors(new Vertex(cities[i]));
+
+                if (!nodeEdges.Exists(n => n.Neighbor.Value.ToString() == cities[i + 1]))
+                {
+                    return null;
+                }
+                else
+                {
+                    cost += nodeEdges.Find(n => n.Neighbor.Value.ToString() == cities[i + 1]).Weight;
+                }
+            }
+            return cost;
         }
     }
 }
