@@ -80,3 +80,20 @@ Write a function called business trip, take graph and array of city names, retur
 ## Solution
 ![Whiteboard](Assest/WhiteboardTrip.png)
 
+# Depth-First Traversal of a Graph
+
+Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. 
+The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) 
+and explores as far as possible along each branch before backtracking.
+## Challenge
+
+Write method Name Depthfirst take Node (Starting point of search) and return a collection of nodes in 
+their pre-order depth-first traversal order.
+
+## Approach & Efficiency
+- Time :O(N)
+- Space :O(N^2)
+## Solution
+
+![Whiteboard](Assest/WhiteboardDepth.png)
+

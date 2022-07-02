@@ -16,7 +16,6 @@ namespace GraphTest
 
             Assert.Contains(node, graph.Vertices);
         }
-
         [Fact]
         public void EdgeCanBeAddedToGraph()
         {
@@ -29,7 +28,6 @@ namespace GraphTest
 
             Assert.NotEmpty(A.Edge);
         }
-
         [Fact]
         public void CanGetGraphNodeList()
         {
@@ -46,7 +44,6 @@ namespace GraphTest
 
             Assert.IsType<List<Vertex>>(list);
         }
-
         [Fact]
         public void CanGetNeighborsFromNode()
         {
@@ -61,7 +58,6 @@ namespace GraphTest
 
             Assert.Equal(2, result.Count);
         }
-
         [Fact]
         public void NieghborNodesHaveWeight()
         {
@@ -74,7 +70,6 @@ namespace GraphTest
 
             Assert.Equal(9999, result[0].Weight);
         }
-
         [Fact]
         public void CanGetSizeOfGraph()
         {
@@ -91,7 +86,6 @@ namespace GraphTest
 
             Assert.Equal(7, count);
         }
-
         [Fact]
         public void GraphCanHaveOneNodeAndEdge()
         {
@@ -103,7 +97,6 @@ namespace GraphTest
 
             Assert.Equal(A, result.ToArray()[0]);
         }
-
         [Fact]
         public void EmptyGraphReturnsNull()
         {
@@ -113,7 +106,6 @@ namespace GraphTest
 
             Assert.Null(result);
         }
-
         [Fact]
         public void CanReturnRouteAtoG()
         {
@@ -147,7 +139,6 @@ namespace GraphTest
 
             Assert.Equal(expected, result);
         }
-
         [Fact]
         public void CanReturnSelfPointingEdge()
         {
@@ -160,7 +151,6 @@ namespace GraphTest
 
             Assert.Equal("A", result[0].Edge[0].Neighbor.Value);
         }
-
         [Fact]
         public void PathOfManyCitiesReturnsCost()
         {
@@ -240,6 +230,76 @@ namespace GraphTest
 
             Assert.Null(result);
         }
+        [Fact]
+        public void DepthFirstGraphReturnsPreOrder()
+        {
+            Graph graph3 = new Graph();
 
+            Vertex A3 = new Vertex("A");
+            Vertex B3 = new Vertex("B");
+            Vertex C3 = new Vertex("C");
+            Vertex D3 = new Vertex("D");
+            Vertex E3 = new Vertex("E");
+            Vertex F3 = new Vertex("F");
+
+            graph3.AddNode("A");
+            graph3.AddNode("B");
+            graph3.AddNode("C");
+            graph3.AddNode("D");
+            graph3.AddNode("E");
+            graph3.AddNode("F");
+
+            graph3.AddEdge(A3, B3, 4);
+            graph3.AddEdge(A3, C3, 6);
+            graph3.AddEdge(B3, D3, 22);
+            graph3.AddEdge(B3, E3, 5);
+            graph3.AddEdge(C3, F3, 15);
+
+            Stack<Vertex> list = graph3.DepthFirst(graph3);
+            Stack<object> result = new Stack<object>();
+            foreach (Vertex node in list)
+            {
+                result.Push(node.Value);
+            }
+            Stack<object> expected = new Stack<object>();
+            expected.Push("F");
+            expected.Push("C");
+            expected.Push("E");
+            expected.Push("D");
+            expected.Push("B");
+            expected.Push("A");
+
+            Assert.Equal(expected, result);
+
+        }
+        [Fact]
+        public void SingleNodeDepthFirstGraphReturnsRoot()
+        {
+            Graph graph3 = new Graph();
+
+            Vertex A3 = new Vertex("A");
+
+            graph3.AddNode("A");
+
+            Stack<Vertex> list = graph3.DepthFirst(graph3);
+            Stack<object> result = new Stack<object>();
+            foreach (Vertex node in list)
+            {
+                result.Push(node.Value);
+            }
+            Stack<object> expected = new Stack<object>();
+            expected.Push("A");
+
+            Assert.Equal(expected, result);
+        }
+        [Fact]
+        public void EmptyDepthFirstGraphReturnsNull()
+            {
+                Graph graph = new Graph();
+
+                Stack<Vertex> result = graph.DepthFirst(graph);
+
+                Assert.Null(result);
+            }
+        }
     }
-}
