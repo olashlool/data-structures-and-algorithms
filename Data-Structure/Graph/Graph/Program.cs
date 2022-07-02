@@ -126,6 +126,43 @@ namespace Graphs
             Console.WriteLine("Amman -> Zarqa -> Madaba?");
             Console.WriteLine($"${result}");
 
+            // <! --------------------------------------------------------------------- >
+            Console.WriteLine();
+            Console.WriteLine("==========================================");
+            Console.WriteLine("=============== Depth First ============");
+            Console.WriteLine("==========================================");
+            Console.WriteLine();
+
+            Graph graph3 = new Graph();
+
+            Vertex A3 = new Vertex("A");
+            Vertex B3 = new Vertex("B");
+            Vertex C3 = new Vertex("C");
+            Vertex D3 = new Vertex("D");
+            Vertex E3 = new Vertex("E");
+            Vertex F3 = new Vertex("F");
+
+            graph3.AddNode("A");
+            graph3.AddNode("B");
+            graph3.AddNode("C");
+            graph3.AddNode("D");
+            graph3.AddNode("E");
+            graph3.AddNode("F");
+
+            graph3.AddEdge(A3, B3, 4);
+            graph3.AddEdge(A3, C3, 6);
+            graph3.AddEdge(B3, D3, 22);
+            graph3.AddEdge(B3, E3, 5);
+            graph3.AddEdge(C3, F3, 15);
+
+
+            Stack<Vertex> depthFirst = graph3.DepthFirst(graph3);
+            Console.Write("Depth first graph: at root A: ");
+            foreach (Vertex node in depthFirst)
+            {
+                Console.Write($" {node.Value} ");
+            }
+            Console.WriteLine();
         }
     }
 }

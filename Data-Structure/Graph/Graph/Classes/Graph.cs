@@ -78,7 +78,6 @@ namespace Graphs
             }
             return Vertexs;
         }
-
         public int? BusinessTrip(Graph graph, string[] cities)
         {
             int cost = 0;
@@ -101,5 +100,32 @@ namespace Graphs
             }
             return cost;
         }
+
+        public Stack<Vertex> DepthFirst(Graph graph) // Takes in a graph and returns a list of nodes in pre-order, depth first order.
+        {
+            if (graph.Vertices.Count == 0)
+            {
+                return null;
+            }
+            Stack<Vertex> result = new Stack<Vertex>();
+            Vertex root = graph.Vertices[0];
+
+            result = DepthFirstHelper(graph, result, root);
+            return result;
+        }
+        public Stack<Vertex> DepthFirstHelper(Graph graph, Stack<Vertex> stack, Vertex root) // Helper method to DepthFirst() that perfoms pre-order, depth first traversal of a graph and adds its nodes to a list.
+        {
+            root.Visited = true;
+            stack.Push(root);
+            foreach (Edge edge in root.Edge)
+            {
+                if (!edge.Neighbor.Visited)
+                {
+                    DepthFirstHelper(graph, stack, edge.Neighbor);
+                }
+            }
+            return stack;
+        }
+
     }
 }
