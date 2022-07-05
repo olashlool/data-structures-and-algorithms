@@ -31,6 +31,10 @@
 | Graph Business Trip |[Challenges-Graph-Business-Trip](Data-Structure/Graph/README.md)|
 | Depth First Graph |[Data-Structures-Depth-First-Graph](Data-Structure/Graph/README.md#depth-first-traversal-of-a-graph)|
 | Identify Anagrams |[Mock-Interviews-Identify-Anagrams](Mock-Interviews/identify-anagrams/README.md)|
+| Adjacency Matrix |[Mock-Interviews-Adjacency-Matrix](Mock-Interviews/adjacency-matrix/README.md)|
+
+
+
 
 
 
