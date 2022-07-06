@@ -34,6 +34,7 @@
 | Adjacency Matrix |[Mock-Interviews-Adjacency-Matrix](Mock-Interviews/adjacency-matrix/README.md)|
 | Sanitize URL |[Mock-Interviews-Sanitize-URL](Mock-Interviews/sanitize-url/README.md)|
 | Roman Numerals |[Mock-Interviews-Roman-Numerals](Mock-Interviews/roman-numerals/README.md)|
+| Rotate Matrix |[Mock-Interviews-Rotate-Matrix](Mock-Interviews/rotate-matrix/README.md)|
 
 
 
